@@ -31,7 +31,7 @@ If the theme is already installed without its live animation plugin, install and
 omarchy plugin add https://github.com/monkeyking-hq/omarchy-flower-fruit-mountain-theme.git --enable
 ```
 
-The plugin requires Omarchy's Quickshell-based shell with native plugin support, the `QtQuick.Particles` and `QtQuick.Shapes` QML modules, and Omarchy's `qs.Ui.ScreenMoveRemap` component. Validated on Omarchy 4.5.0-3. Omarchy installations missing these components, including desktops running Waybar without the Omarchy shell, cannot run this overlay.
+The plugin requires Omarchy's Quickshell-based shell with native plugin support and the `QtQuick.Particles` and `QtQuick.Shapes` QML modules. Validated on Omarchy 4.x (`omarchy-dev` 4.0.0.r8309.g3642699-2, Hyprland 0.57.2). Omarchy installations missing these components, including desktops running Waybar without the Omarchy shell, cannot run this overlay.
 
 The overlay follows the resolved wallpaper path at `~/.local/state/omarchy/current/background`. It appears only when that path contains `flower-fruit-mountain`, and hides when you switch to another wallpaper path. It creates an overlay for each monitor, shares the random wind across screens, and scales the scene to match the wallpaper's crop. The summit glow and waterfall are positioned for the Flower-Fruit Mountain artwork.
 
