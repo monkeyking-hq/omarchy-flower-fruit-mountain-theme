@@ -4,7 +4,6 @@ import QtQuick.Shapes
 import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
-import qs.Ui
 
 Item {
   id: root
@@ -135,7 +134,7 @@ Item {
       required property var modelData
 
       screen: modelData
-      visible: !remapGuard.remapping && root.active
+      visible: root.active
       color: "transparent"
       anchors { top: true; bottom: true; left: true; right: true }
       exclusionMode: ExclusionMode.Ignore
@@ -144,11 +143,6 @@ Item {
       WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
       mask: Region {}
       updatesEnabled: true
-
-      ScreenMoveRemap {
-        id: remapGuard
-        window: panel
-      }
 
       // Map the 1600x900 mountain viewBox through the same crop the wallpaper uses.
       Item {
