@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-11-25
+
+### Added
+- Enable the live peach blossom overlay across all Flower-Fruit Mountain theme backgrounds by checking `~/.local/state/omarchy/current/theme.name` in addition to the resolved wallpaper path.
+- Add tailored per-background lighting and petal emitter profiles matched to all five theme wallpapers (`1-flower-fruit-mountain`, `2-dawn-ridges`, `3-peach-grove`, `4-golden-staff`, and `5-golden-circlet`), plus clean ambient windblown petals for `omarchy.png` and custom backgrounds while keeping background 1 unchanged.
+
 ## [1.0.6] - 2026-11-25
 
 ### Fixed
